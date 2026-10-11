@@ -20,7 +20,7 @@ never modify it:
 Your Behavior Tree assets are never dirtied and never need saving because you looked at them. An
 automation test (`BTGraphViewer.ReadOnly.NoAssetMutation`) enforces this.
 
-!!! info Capture à produire : `bgv_readonly_badge`
+!!!info Capture à produire : `bgv_readonly_badge`
 **À montrer :** Le filigrane READ-ONLY sur le graphe.
 
 **Mise en place :** N'importe quelle capture chargée.

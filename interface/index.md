@@ -10,7 +10,7 @@ The viewer is made of five panels around a toolbar.
 
 ![The five panels, numbered](../static/images/bgv_interface_annotated.png)
 
-Each panel is outlined and named in the image. The table below describes them in the same order.
+Each panel is outlined and named in the image. The table below describes them.
 
 | Panel | What it shows |
 |---|---|
@@ -42,6 +42,6 @@ The **Details** panel, here showing the agent's status categories.
 
 ![The Details panel](../static/images/bgv_details.png)
 
-!!! info Read-only
+!!!info Read-only
 The graph is the **real** Behavior Tree asset, shown read-only. Your assets are never modified or dirtied.
 !!!

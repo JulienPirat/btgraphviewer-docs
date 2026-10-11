@@ -1,5 +1,5 @@
 ---
-icon: dot-fill
+icon: play
 label: Recording & Loading
 order: 85
 ---
@@ -12,12 +12,12 @@ order: 85
 2. Play your level and let the AI misbehave.
 3. Press **Stop**. Every agent that ran a Behavior Tree appears in the **Agents** list.
 
-Stopping the Visual Logger from anywhere else (for example the stock Visual Logger window) is
+Stopping the Visual Logger from anywhere else (for example the default Visual Logger window) is
 detected automatically and the toolbar reconciles itself.
 
-!!! warning
+!!!warning
 Recording relies on the engine's global Visual Logger flag, which has no per-consumer reference
-counting. Pressing **Stop** here stops Visual Logger recording globally, exactly as the stock
+counting. Pressing **Stop** here stops Visual Logger recording globally, exactly as the default
 Visual Logger window's Stop button does.
 !!!
 

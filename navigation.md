@@ -1,5 +1,5 @@
 ---
-icon: command-palette
+icon: telescope
 label: Navigation & Shortcuts
 order: 75
 ---
@@ -25,11 +25,7 @@ which is usually what you want for a bug report.
 
 ![The debug dump window](static/images/bgv_debug_dump.png)
 
-!!! info GIF à produire : `bgv_timeline_scrub`
-**À montrer :** Le graphe qui s'allume pendant que le curseur de la timeline se déplace.
+Dragging the timeline cursor moves the graph from frame to frame:
 
-**Mise en place :** Charge une capture avec un arbre à plusieurs branches. Enregistre l'écran pendant que tu fais glisser le curseur sur 6 à 10 frames.
-
-**Cadrage :** Le graphe et la timeline ensemble. Moins de 10 secondes et moins de 3 Mo.
-!!!
+<video src="../static/videos/bgv_timeline_scrub.mp4" autoplay loop muted="muted" playsinline controls style="width:100%"></video>
 

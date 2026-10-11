@@ -6,10 +6,16 @@ order: 78
 
 # Search
 
+!!!warning WORK IN PROGRESS
+The Search tab is still in development. Its behavior and interface may change in a future update.
+!!!
+
 The Search tab finds every frame of an agent where a condition is true, so you can jump straight to
 the moment you care about instead of scrubbing.
 
 Press **Ctrl + F** with the viewer focused to open it.
+
+![The Search tab, before any condition is set](static/images/bgv_search_overview.png)
 
 ## Conditions
 
@@ -23,6 +29,10 @@ data, so you can only pick a node that exists in that capture.
 
 An empty key or node never matches anything, so a half-filled condition does not flood the list.
 
+Here is a **Blackboard Key = Value** search: the matching frames are listed, and marked on the timeline below.
+
+![A Blackboard Key = Value search with its matching frames](static/images/bgv_search_blackboard.png)
+
 ## Results
 
 Every matching frame is listed with its frame number and time.
@@ -34,26 +44,15 @@ Every matching frame is listed with its frame number and time.
 
 ## Searching all agents
 
-**See all agents** runs the same condition on every recorded agent and lists how many frames matched
-for each. Double-click an agent to open a new Search tab pinned to that agent, with the same
-condition.
+By default, a search only looks at the agent you selected. To check every agent at once:
 
-The Ctrl + F tab follows whichever agent is selected. A tab opened by drilling down stays on its own
-agent, so the original search is never disturbed. You can have several Search tabs open at once.
+1. Set your condition, then click **See all agents**.
+2. You get a list of all recorded agents, each with the number of frames that matched.
+3. Double-click an agent to open a new Search tab for that agent, with the same condition.
+4. Click **Back to this agent** to return to the normal results list.
 
-!!! info Capture à produire : `bgv_search_tab`
-**À montrer :** L'onglet Search avec une condition Blackboard et quelques résultats.
+Here, a **Node Reached** search run on all agents:
 
-**Mise en place :** Appuie sur Ctrl+F. Choisis Blackboard Key = Value, saisis une vraie clé et une vraie valeur de ta capture pour avoir 3 à 6 lignes.
+![See all agents with a Node Reached condition: matches per agent](static/images/bgv_search_all_agents.png)
 
-**Cadrage :** L'onglet Search, avec la timeline visible en dessous pour voir les frames trouvées.
-!!!
-
-!!! info Capture à produire : `bgv_search_all_agents`
-**À montrer :** La vue "See all agents" avec un nombre de correspondances par agent.
-
-**Mise en place :** Même condition que ci-dessus, puis clique sur See all agents. Utilise une capture avec plusieurs agents.
-
-**Cadrage :** L'onglet Search seul.
-!!!
-
+The tab you opened with **Ctrl + F** always follows the agent you select. The new tab stays on the agent you double-clicked, so your original search is not changed. You can keep several Search tabs open at the same time.

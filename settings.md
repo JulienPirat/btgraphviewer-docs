@@ -8,8 +8,7 @@ order: 60
 
 Click **Settings** in the toolbar to open the settings window. Click it again to close it.
 
-The window is the engine's standard property grid, so it has collapsible sections and a search box
-at the top. Every change is **saved and applied immediately**: the graph and the timeline redraw as
+Every change is **saved and applied immediately**: the graph and the timeline redraw as
 soon as you edit a value. **Reset to Defaults** (top right of the window) restores everything.
 
 Settings are grouped in three categories.
@@ -29,6 +28,10 @@ Colors used by the timeline bar at the bottom of the viewer.
 | Timeline Tick Label Color | The time labels next to the ticks |
 | Timeline Info Text Color | The text in the timeline's info line |
 
+Changes apply live, as you edit the color:
+
+<video src="../static/videos/bgv_settings_timeline.mp4" autoplay loop muted playsinline controls style="width:100%"></video>
+
 ## Blackboard
 
 | Setting | What it colors |
@@ -40,13 +43,12 @@ Colors used by the timeline bar at the bottom of the viewer.
 
 | Setting | Default | What it does |
 |---|---|---|
-| Enable Graph Change Revert | On | Any graph modification (node move, connection, etc.) is automatically reverted, to keep the graph read-only. See [Read-only guarantee](read-only.md) |
+| Enable Graph Change Revert | On | Any graph modification (node move, connection, etc.) is automatically reverted, to keep the graph read-only. This option is greyed out so it cannot be changed: turning it off could modify the Behavior Tree asset in your project. See [Read-only guarantee](read-only.md) |
 | Sync With Gameplay Debugger | Off | The viewer follows the actor selected in the Gameplay Debugger. See [Gameplay Debugger sync](gameplay-debugger-sync.md) |
 | Confirm Before Clear | On | The **Clear** button asks for confirmation before wiping captured or loaded data. There is no undo, so turn this off only if the prompt gets in your way |
 
-!!! warning
-Leave **Enable Graph Change Revert** on unless you have a reason not to. It is one of the layers that
-keeps your Behavior Tree assets from being modified.
+!!!danger DO NOT DISABLE
+**Enable Graph Change Revert** is locked on. Turning it off would remove the read-only guarantee, and the viewer could then modify your Behavior Tree assets.
 !!!
 
 ## Where settings are stored
@@ -60,15 +62,4 @@ Settings are stored per project in:
 Nothing is written inside the plugin folder, so engine-level installs (which are read-only) work.
 
 ![The Settings window with its three categories](static/images/bgv_settings_window.png)
-
-!!! info Capture à produire : `bgv_settings_timeline`
-**À montrer :** Le sélecteur de couleur d'Unreal ouvert pour changer une couleur de la timeline.
-
-**Mise en place :**
-1. Ouvre la fenêtre Settings (bouton Settings de la barre d'outils).
-2. Dans la catégorie Timeline, clique sur le rectangle de couleur à droite de "Timeline Cursor Color". Une fenêtre avec une roue de couleurs s'ouvre.
-3. Laisse-la ouverte et fais la capture.
-
-**Cadrage :** La fenêtre Settings avec le sélecteur de couleur ouvert à côté, dans la même image.
-!!!
 

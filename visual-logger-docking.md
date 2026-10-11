@@ -1,5 +1,5 @@
 ---
-icon: columns
+icon: split-view
 label: Visual Logger docking
 order: 70
 ---

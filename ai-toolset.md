@@ -1,5 +1,5 @@
 ---
-icon: hubot
+icon: ai-model
 label: AI / MCP Toolset
 order: 55
 ---
@@ -8,12 +8,12 @@ order: 55
 
 The plugin registers a **native Unreal Toolset**, so any AI client wired into Unreal's Toolset
 Registry (the engine's MCP server, or the in-editor AI assistant) can drive the viewer directly.
-It shows up as `BTGraphViewerToolset` in `list_toolsets`.
+Your AI client lists it as `BTGraphViewerToolset` among the available toolsets.
 
 Every call drives the same viewer window a human uses. There is no parallel code path, and all of it
 stays read-only with respect to your assets.
 
-!!! info Optional
+!!!info Optional
 The toolset lives in its own module (`BTGraphViewerAI`) and the viewer has no dependency on it. If
 you never enable AI tooling, nothing changes.
 !!!
@@ -51,15 +51,7 @@ Reports where the timeline sits.
 
 Full state: active nodes, Blackboard, and the node ↔ execution-index map.
 
-!!! info Capture à produire : `bgv_ai_toolset`
-**À montrer :** BTGraphViewerToolset listé dans list_toolsets.
-
-**Mise en place :** Dans ton client IA, appelle list_toolsets avec le plugin activé.
-
-**Cadrage :** La sortie de l'outil seule, avec le nom du toolset et ses sept outils visibles.
-!!!
-
-!!! info Capture à produire : `bgv_ai_session`
+!!!info Capture à produire : `bgv_ai_session`
 **À montrer :** Un assistant qui parcourt une capture : LoadCapture, SelectAgent, SetFrame, GetViewerState.
 
 **Mise en place :** Demande à l'assistant d'expliquer pourquoi un agent a fait quelque chose dans une capture. Laisse-le appeler les outils.

@@ -10,17 +10,15 @@ Enable **Sync With Gameplay Debugger** in [Settings](settings.md) and the viewer
 pawn you select in the Gameplay Debugger during play, advancing live as that agent's tree keeps
 running.
 
-This is **off by default**.
+This is **off by default** but can be very useful.
 
-!!! info Scope
+!!!info Scope
 Sync covers PIE/Game worlds and a single local player.
 !!!
 
-!!! info Capture à produire : `bgv_gameplaydebugger_sync`
-**À montrer :** Sync With Gameplay Debugger activé, avec le viewer qui suit un pawn.
-
-**Mise en place :** Active l'option dans Settings, lance le PIE, sélectionne un pawn dans le Gameplay Debugger. Place le viewer à côté du viewport du jeu.
-
-**Cadrage :** Le viewer avec l'agent suivi, et la sélection du Gameplay Debugger visible dans le viewport derrière.
+!!!info Gameplay Debugger
+The Gameplay Debugger is Unreal's in-game overlay for inspecting an AI pawn. During play, press the apostrophe key (`'`) to open it.
 !!!
+
+<video src="../static/videos/bgv_gameplaydebugger_sync.mp4" autoplay loop muted playsinline controls style="width:100%"></video>
 
