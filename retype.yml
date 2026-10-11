@@ -1,0 +1,23 @@
+input: .
+output: .retype
+url: https://julienpirat.github.io/btgraphviewer-docs
+
+branding:
+  title: BT Graph Viewer
+  label: Docs
+
+links:
+  - text: Get it on Fab
+    link: https://www.fab.com/listings/REMPLACER-PAR-ID
+    target: blank
+  - text: Support
+    link: mailto:PapyUnreal@hotmail.com
+
+footer:
+  copyright: "© Julien Pirat"
+
+meta:
+  title: BT Graph Viewer — Behavior Tree Replay Debugger for Unreal Engine
+  description: Replay and inspect Behavior Tree execution from Visual Logger captures.
+
+favicon: static/images/logo-dark.png
