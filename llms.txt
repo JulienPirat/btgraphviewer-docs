@@ -1,0 +1,17 @@
+﻿# BT Graph Viewer — Behavior Tree Replay Debugger for Unreal Engine
+
+> Replay and inspect Behavior Tree execution from Visual Logger captures.
+
+- [Behavior Tree Graph Viewer](https://julienpirat.github.io/btgraphviewer-docs/index.md): Behavior Tree Graph Viewer
+- [Getting Started](https://julienpirat.github.io/btgraphviewer-docs/getting-started.md): Engine
+- [Recording & Loading](https://julienpirat.github.io/btgraphviewer-docs/recording-and-loading.md): Press Start. This turns on the engine's Visual Logger and begins capturing.
+- [Interface](https://julienpirat.github.io/btgraphviewer-docs/interface/index.md): The viewer is made of five panels around a toolbar.
+- [Search](https://julienpirat.github.io/btgraphviewer-docs/search.md): The Search tab is still in development. Its behavior and interface may change in a future update.
+- [Navigation & Shortcuts](https://julienpirat.github.io/btgraphviewer-docs/navigation.md): Action
+- [Visual Logger docking](https://julienpirat.github.io/btgraphviewer-docs/visual-logger-docking.md): The viewer can also be opened from inside the engine's own Visual Logger window: Window → BT Graph Viewer, listed with its Toolbar / Filters / MainView / LogsList / StatusView panels.
+- [Gameplay Debugger sync](https://julienpirat.github.io/btgraphviewer-docs/gameplay-debugger-sync.md): Enable Sync With Gameplay Debugger in Settings and the viewer follows whichever pawn you select in the Gameplay Debugger during play, advancing live as that agent's tree keeps running.
+- [Settings](https://julienpirat.github.io/btgraphviewer-docs/settings.md): Click Settings in the toolbar to open the settings window. Click it again to close it.
+- [AI / MCP Toolset](https://julienpirat.github.io/btgraphviewer-docs/ai-toolset.md): The plugin registers a native Unreal Toolset, so any AI client wired into Unreal's Toolset Registry (the engine's MCP server, or the in-editor AI assistant) can drive the viewer directly.
+- [Read-only guarantee](https://julienpirat.github.io/btgraphviewer-docs/read-only.md): The viewer displays your real Behavior Tree asset, not a copy. It is therefore built so it can never modify it:
+- [Limitations & FAQ](https://julienpirat.github.io/btgraphviewer-docs/limitations.md): Editor only. By design, this is a debugging tool.
+- [Changelog](https://julienpirat.github.io/btgraphviewer-docs/changelog.md): First release. Unreal Engine 5.8.
