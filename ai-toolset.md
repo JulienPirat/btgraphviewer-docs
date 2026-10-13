@@ -21,6 +21,8 @@ you never enable AI tooling, nothing changes.
 Typical loop: `LoadCapture` → `SelectAgent` → `SetFrame` → `GetViewerState`. That is enough for an
 assistant to walk a capture and explain why an agent did what it did.
 
+<video src="../static/videos/bgv_ai_session.mp4" autoplay loop muted playsinline controls style="width:100%"></video>
+
 ## Tool list
 
 ### OpenViewer
@@ -50,12 +52,4 @@ Reports where the timeline sits.
 ### GetViewerState
 
 Full state: active nodes, Blackboard, and the node ↔ execution-index map.
-
-!!!info Capture à produire : `bgv_ai_session`
-**À montrer :** Un assistant qui parcourt une capture : LoadCapture, SelectAgent, SetFrame, GetViewerState.
-
-**Mise en place :** Demande à l'assistant d'expliquer pourquoi un agent a fait quelque chose dans une capture. Laisse-le appeler les outils.
-
-**Cadrage :** La conversation avec les appels d'outils visibles, et la fenêtre du viewer si ça rentre.
-!!!
 
