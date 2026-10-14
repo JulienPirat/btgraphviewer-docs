@@ -49,4 +49,6 @@ Via the Visual Logger window:
 3. Press **Stop**. Every agent that ran a Behavior Tree appears in the **Agents** list.
 4. Click an agent, then drag on the timeline. The graph lights up frame by frame.
 
+Want an AI assistant to drive the viewer? That is a separate optional plugin: see [AI / MCP Toolset](ai-toolset.md).
+
 Next: [Recording & Loading](recording-and-loading.md) and [Interface](interface/index.md).
