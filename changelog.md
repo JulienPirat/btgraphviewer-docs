@@ -12,5 +12,5 @@ First release. Unreal Engine 5.8.
 - Optional [Gameplay Debugger sync](gameplay-debugger-sync.md).
 - Plain-text frame dump (**T**) with clipboard copy.
 - Details tab values can be copied with **right-click → Copy**.
-- Drivable from an AI assistant through Unreal's native Toolset Registry: seven tools (`OpenViewer`, `LoadCapture`, `ListAgents`, `SelectAgent`, `SetFrame`, `GetFrameInfo`, `GetViewerState`) exposed as `BTGraphViewerToolset`, in a separate optional module. See [AI / MCP Toolset](ai-toolset.md).
+- Drivable from an AI assistant through Unreal's native Toolset Registry: seven tools (`OpenViewer`, `LoadCapture`, `ListAgents`, `SelectAgent`, `SetFrame`, `GetFrameInfo`, `GetViewerState`) exposed as `BTGraphViewerToolset`, in a separate optional plugin (**BT Graph Viewer AI Toolset**). See [AI / MCP Toolset](ai-toolset.md).
 - Strictly read-only: displayed Behavior Tree assets are never modified or dirtied.
