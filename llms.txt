@@ -11,7 +11,7 @@
 - [Visual Logger docking](https://julienpirat.github.io/btgraphviewer-docs/visual-logger-docking.md): The viewer can also be opened from inside the engine's own Visual Logger window: Window → BT Graph Viewer, listed with its Toolbar / Filters / MainView / LogsList / StatusView panels.
 - [Gameplay Debugger sync](https://julienpirat.github.io/btgraphviewer-docs/gameplay-debugger-sync.md): Enable Sync With Gameplay Debugger in Settings and the viewer follows whichever pawn you select in the Gameplay Debugger during play, advancing live as that agent's tree keeps running.
 - [Settings](https://julienpirat.github.io/btgraphviewer-docs/settings.md): Click Settings in the toolbar to open the settings window. Click it again to close it.
-- [AI / MCP Toolset](https://julienpirat.github.io/btgraphviewer-docs/ai-toolset.md): The AI toolset is BT Graph Viewer AI Toolset, a separate optional plugin for BT Graph Viewer. It registers a native Unreal Toolset, so any AI client wired into Unreal's Toolset Registry (the engine's MCP server) can drive the viewer directly.
+- [AI / MCP Toolset](https://julienpirat.github.io/btgraphviewer-docs/ai-toolset.md): BT Graph Viewer registers a native Unreal Toolset, so any AI client wired into Unreal's Toolset Registry (the engine's MCP server) can drive the viewer directly.
 - [Read-only guarantee](https://julienpirat.github.io/btgraphviewer-docs/read-only.md): The viewer displays your real Behavior Tree asset, not a copy. It is therefore built so it can never modify it:
 - [Limitations & FAQ](https://julienpirat.github.io/btgraphviewer-docs/limitations.md): Editor only. By design, this is a debugging tool.
 - [Changelog](https://julienpirat.github.io/btgraphviewer-docs/changelog.md): First release. Unreal Engine 5.8.

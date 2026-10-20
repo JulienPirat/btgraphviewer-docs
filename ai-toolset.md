@@ -1,36 +1,34 @@
 # AI / MCP Toolset
 
-The AI toolset is **BT Graph Viewer AI Toolset**, a separate optional plugin for BT Graph Viewer.
-It registers a **native Unreal Toolset**, so any AI client wired into Unreal's Toolset Registry (the
-engine's [MCP server](https://dev.epicgames.com/documentation/unreal-engine/unreal-mcp-in-unreal-editor){target="blank"}) can drive the viewer directly. Your AI client
+BT Graph Viewer registers a **native Unreal Toolset**, so any AI client wired into Unreal's Toolset
+Registry (the engine's [MCP server](https://dev.epicgames.com/documentation/unreal-engine/unreal-mcp-in-unreal-editor){target="blank"}) can drive the viewer directly. Your AI client
 lists it as `BTGraphViewerToolset` among the available toolsets.
 
 Every call drives the same viewer window a human uses. There is no parallel code path, and all of it
 stays read-only with respect to your assets.
 
-!!!info Optional
-BT Graph Viewer has no dependency on this plugin and works the same without it. If you never use AI
-tooling, you can ignore it.
+!!!info Nothing to set up
+The toolset lives in the plugin's `BTGraphViewerAI` module and is available as soon as BT Graph
+Viewer is enabled. If you never use AI tooling, nothing calls it and you can ignore this page.
 !!!
 
 ## Requirements
 
 | | |
 |---|---|
-| Plugins | **BT Graph Viewer** and the engine's **Toolset Registry** |
+| Plugins | **BT Graph Viewer**, which pulls in the engine's **Toolset Registry** |
 | Engine | Unreal Engine 5.8 |
-| Status | Experimental, disabled by default |
+| Status | Toolset Registry is Experimental |
 
-Toolset Registry is an experimental plugin that ships with the engine and is disabled by default.
-Enabling the AI toolset turns it on for you.
+Toolset Registry ships with the engine but is disabled by default. BT Graph Viewer declares it as a
+dependency, so Unreal enables it for you.
 
-## Enabling it
+## Checking it is available
 
-1. Install BT Graph Viewer first (see [Getting Started](getting-started.md)).
-2. Open **Edit → Plugins**, find **BT Graph Viewer AI Toolset** under **Tools** and enable it.
-3. Accept the prompt to also enable the plugins it depends on, then restart the editor.
+Enable BT Graph Viewer as usual (see [Getting Started](getting-started.md)) and restart the editor.
+In **Edit → Plugins** you will find **Toolset Registry** enabled next to it, turned on for you.
 
-![BT Graph Viewer AI Toolset in the Plugins window](static/images/bgv_ai_plugin.png)
+From your AI client, `BTGraphViewerToolset` then shows up in `list_toolsets`.
 
 Typical loop: `LoadCapture` → `SelectAgent` → `SetFrame` → `GetViewerState`. That is enough for an
 assistant to walk a capture and explain why an agent did what it did.

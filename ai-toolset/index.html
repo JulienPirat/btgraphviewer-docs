@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
     <meta name="turbo-root" content="/btgraphviewer-docs">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.845331911344">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.845790236550">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -13,7 +13,7 @@
     <!-- Primary Meta Tags -->
     <title>AI / MCP ToolsetBT Graph Viewer — Behavior Tree Replay Debugger for Unreal Engine</title>
     <meta name="title" content="AI / MCP ToolsetBT Graph Viewer — Behavior Tree Replay Debugger for Unreal Engine">
-    <meta name="description" content="The AI toolset is BT Graph Viewer AI Toolset, a separate optional plugin for BT Graph Viewer. It registers a native Unreal Toolset, so any AI client wired into Unreal's Toolset Registry (the engine's MCP server) can drive the viewer directly.">
+    <meta name="description" content="BT Graph Viewer registers a native Unreal Toolset, so any AI client wired into Unreal's Toolset Registry (the engine's MCP server) can drive the viewer directly.">
 
     <!-- Canonical -->
     <link rel="canonical" href="https://julienpirat.github.io/btgraphviewer-docs/ai-toolset/">
@@ -23,11 +23,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://julienpirat.github.io/btgraphviewer-docs/ai-toolset/">
     <meta property="og:title" content="AI / MCP ToolsetBT Graph Viewer — Behavior Tree Replay Debugger for Unreal Engine">
-    <meta property="og:description" content="The AI toolset is BT Graph Viewer AI Toolset, a separate optional plugin for BT Graph Viewer. It registers a native Unreal Toolset, so any AI client wired into Unreal's Toolset Registry (the engine's MCP server) can drive the viewer directly.">
-    <meta property="og:image" content="https://julienpirat.github.io/btgraphviewer-docs/static/images/bgv_ai_plugin.png">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="AI / MCP ToolsetBT Graph Viewer — Behavior Tree Replay Debugger for Unreal Engine">
+    <meta property="og:description" content="BT Graph Viewer registers a native Unreal Toolset, so any AI client wired into Unreal's Toolset Registry (the engine's MCP server) can drive the viewer directly.">
     <meta property="og:site_name" content="BT Graph Viewer">
     <meta property="og:locale" content="en_US">
 
@@ -35,9 +31,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://julienpirat.github.io/btgraphviewer-docs/ai-toolset/">
     <meta name="twitter:title" content="AI / MCP ToolsetBT Graph Viewer — Behavior Tree Replay Debugger for Unreal Engine">
-    <meta name="twitter:description" content="The AI toolset is BT Graph Viewer AI Toolset, a separate optional plugin for BT Graph Viewer. It registers a native Unreal Toolset, so any AI client wired into Unreal's Toolset Registry (the engine's MCP server) can drive the viewer directly.">
-    <meta name="twitter:image" content="https://julienpirat.github.io/btgraphviewer-docs/static/images/bgv_ai_plugin.png">
-    <meta name="twitter:image:alt" content="AI / MCP ToolsetBT Graph Viewer — Behavior Tree Replay Debugger for Unreal Engine">
+    <meta name="twitter:description" content="BT Graph Viewer registers a native Unreal Toolset, so any AI client wired into Unreal's Toolset Registry (the engine's MCP server) can drive the viewer directly.">
 
     <!-- Alternate Markdown -->
     <link rel="alternate" type="text/markdown" href="https://julienpirat.github.io/btgraphviewer-docs/ai-toolset.md">
@@ -45,11 +39,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../static/images/logo-dark.png" />
-    <link href="../resources/css/retype.css?v=4.6.0.845331911344" rel="stylesheet">
+    <link href="../resources/css/retype.css?v=4.6.0.845790236550" rel="stylesheet">
 
-    <script data-cfasync="false" src="../resources/js/config.js?v=4.6.0.845331911344" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../resources/js/config.js?v=4.6.0.845790236550" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.6.0.845331911344" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../resources/js/lunr.js?v=4.6.0.845790236550" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -162,9 +156,8 @@
 
                 <!-- Page content  -->
 <h1 id="ai--mcp-toolset">AI / MCP Toolset</h1>
-<p>The AI toolset is <strong>BT Graph Viewer AI Toolset</strong>, a separate optional plugin for BT Graph Viewer.
-It registers a <strong>native Unreal Toolset</strong>, so any AI client wired into Unreal&#x27;s Toolset Registry (the
-engine&#x27;s <a href="https://dev.epicgames.com/documentation/unreal-engine/unreal-mcp-in-unreal-editor" target="blank">MCP server</a>) can drive the viewer directly. Your AI client
+<p>BT Graph Viewer registers a <strong>native Unreal Toolset</strong>, so any AI client wired into Unreal&#x27;s Toolset
+Registry (the engine&#x27;s <a href="https://dev.epicgames.com/documentation/unreal-engine/unreal-mcp-in-unreal-editor" target="blank">MCP server</a>) can drive the viewer directly. Your AI client
 lists it as <code translate="no" v-pre>BTGraphViewerToolset</code> among the available toolsets.</p>
 <p>Every call drives the same viewer window a human uses. There is no parallel code path, and all of it
 stays read-only with respect to your assets.</p>
@@ -181,18 +174,18 @@ stays read-only with respect to your assets.</p>
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-            <h5>Optional</h5>
-<p>BT Graph Viewer has no dependency on this plugin and works the same without it. If you never use AI
-tooling, you can ignore it.</p>
+            <h5>Nothing to set up</h5>
+<p>The toolset lives in the plugin&#x27;s <code translate="no" v-pre>BTGraphViewerAI</code> module and is available as soon as BT Graph
+Viewer is enabled. If you never use AI tooling, nothing calls it and you can ignore this page.</p>
         </div>
     </div>
 </div>
 <h2 id="requirements">Requirements</h2>
 <retype-table copy-text="| | |
 |---|---|
-| Plugins | **BT Graph Viewer** and the engine's **Toolset Registry** |
+| Plugins | **BT Graph Viewer**, which pulls in the engine's **Toolset Registry** |
 | Engine | Unreal Engine 5.8 |
-| Status | Experimental, disabled by default |">
+| Status | Toolset Registry is Experimental |">
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -204,7 +197,7 @@ tooling, you can ignore it.</p>
 <tbody>
 <tr>
 <td>Plugins</td>
-<td><strong>BT Graph Viewer</strong> and the engine&#x27;s <strong>Toolset Registry</strong></td>
+<td><strong>BT Graph Viewer</strong>, which pulls in the engine&#x27;s <strong>Toolset Registry</strong></td>
 </tr>
 <tr>
 <td>Engine</td>
@@ -212,24 +205,18 @@ tooling, you can ignore it.</p>
 </tr>
 <tr>
 <td>Status</td>
-<td>Experimental, disabled by default</td>
+<td>Toolset Registry is Experimental</td>
 </tr>
 </tbody>
 </table>
 </div>
 </retype-table>
-<p>Toolset Registry is an experimental plugin that ships with the engine and is disabled by default.
-Enabling the AI toolset turns it on for you.</p>
-<h2 id="enabling-it">Enabling it</h2>
-<ol>
-<li>Install BT Graph Viewer first (see <a href="../getting-started/">Getting Started</a>).</li>
-<li>Open <strong>Edit → Plugins</strong>, find <strong>BT Graph Viewer AI Toolset</strong> under <strong>Tools</strong> and enable it.</li>
-<li>Accept the prompt to also enable the plugins it depends on, then restart the editor.</li>
-</ol>
-<figure class="content-center">
-    <img src="../static/images/bgv_ai_plugin.png" alt="BT Graph Viewer AI Toolset in the Plugins window" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1220" height="106" />
-    <figcaption class="caption">BT Graph Viewer AI Toolset in the Plugins window</figcaption>
-</figure>
+<p>Toolset Registry ships with the engine but is disabled by default. BT Graph Viewer declares it as a
+dependency, so Unreal enables it for you.</p>
+<h2 id="checking-it-is-available">Checking it is available</h2>
+<p>Enable BT Graph Viewer as usual (see <a href="../getting-started/">Getting Started</a>) and restart the editor.
+In <strong>Edit → Plugins</strong> you will find <strong>Toolset Registry</strong> enabled next to it, turned on for you.</p>
+<p>From your AI client, <code translate="no" v-pre>BTGraphViewerToolset</code> then shows up in <code translate="no" v-pre>list_toolsets</code>.</p>
 <p>Typical loop: <code translate="no" v-pre>LoadCapture</code> → <code translate="no" v-pre>SelectAgent</code> → <code translate="no" v-pre>SetFrame</code> → <code translate="no" v-pre>GetViewerState</code>. That is enough for an
 assistant to walk a capture and explain why an agent did what it did.</p>
 <p><video src="../static/videos/bgv_ai_session.mp4" autoplay loop muted playsinline controls style="width:100%"></video></p>
